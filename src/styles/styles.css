@@ -1,0 +1,19 @@
+*,
+* ::before,
+* ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", sans-serif;
+}
+
+.Start h2 {
+  color: rgba(142, 162, 105, 0.613);
+}
+
+#instagram {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  background-color: none;
+  border: none;
+}/*# sourceMappingURL=styles.css.map */

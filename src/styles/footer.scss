@@ -1,0 +1,92 @@
+@use './variables' as*;
+
+//Background code
+
+.Container {
+    position: relative;
+    top: 11px;
+    width: 100%;
+    height: 300px; // adjust based on your layout
+    overflow: hidden;
+}
+
+.Darkgreen {
+    background-color: $primary-color; // light green
+    bottom: 100px;
+    z-index: 1;
+}
+
+.Lightgreen {
+    background-color: $secondary-green; // darker green
+    bottom: 70px;
+    z-index: 2;
+}
+
+.Black {
+    background-color: $bold-color; // black
+    bottom: 40px;
+    z-index: 3;
+}
+
+.Orange {
+    background-color: orange;
+    bottom: 2px;
+    z-index: 4;
+}
+
+
+.curve {
+    position: absolute;
+    width: 150%;
+    height: 200px;
+    border-radius: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//Btn code
+
+.Cook-btn {
+    position: relative;
+    color: black;
+    z-index: 4;
+    top: 70px;
+    left: 23%;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    height: auto;
+    width: 200px;
+}
+
+.Cook-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: $bold-color;
+    box-shadow: 0 0 20px 5px orange;
+    transition: box-shadow 0.3s ease-in-out; //eases the fade of the glow in the back
+}
+
+//Socials
+
+.Social-icons {
+    display: flex;
+    position: relative;
+    bottom: 180px;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    z-index: 5;
+    font-size: 30px;
+    color: white;
+
+    a{
+        color: white;
+    }
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: black;
+}

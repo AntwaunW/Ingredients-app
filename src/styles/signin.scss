@@ -1,0 +1,121 @@
+@use './variables' as*;
+
+
+.SignIn-pg {
+    background-color: $neutral-color;
+    min-height: 100vh;
+}
+
+//Profile pic
+
+.User-icon2 {
+    position: absolute;
+    left: 19rem;
+    margin: 10px;
+    border-radius: 50%;
+    }
+
+//Background code
+
+.Container-2 {
+    position: relative;
+    width: 100%;
+    height: 300px; // adjust based on your layout
+    overflow: hidden;
+    top: 25rem;
+}
+
+.Darkgreen-2 {
+    background-color: $primary-color; // light green
+    bottom: 100px;
+    z-index: 1;
+}
+
+.Lightgreen-2 {
+    background-color: $secondary-green; // darker green
+    bottom: 70px;
+    z-index: 2;
+}
+
+.Black-2 {
+    background-color: $bold-color; // black
+    bottom: 40px;
+    z-index: 3;
+}
+
+.Orange-2 {
+    background-color: orange;
+    bottom: 2px;
+    z-index: 4;
+}
+
+
+.curves {
+    position: absolute;
+    width: 150%;
+    height: 200px;
+    border-radius: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//Buttons
+
+.SignIn-btns {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5rem;
+}
+
+.Starting {
+    position: relative;
+    align-content: center;
+    text-align: center;
+    top: 8rem;
+    margin: 10px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    z-index: 6;
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+.Starting:hover {
+    cursor: pointer;
+    color: white;
+    background-color: $bold-color;
+    box-shadow: 0 0 20px 5px orange;
+    transition: box-shadow 0.3s ease-in-out; //eases the fade of the glow in the back
+}
+
+//Socials
+
+.Socials {
+    display: flex;
+    position: relative;
+    bottom: 180px;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    z-index: 5;
+    font-size: 30px;
+    color: white;
+    top: 34rem;
+
+    a {
+        color: white;
+    }
+}
+
+a:hover {
+    color: black;
+}
+

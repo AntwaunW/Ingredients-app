@@ -1,0 +1,36 @@
+
+.Header {
+    display: flex;
+    justify-content: flex-end;
+
+    .User-icon {
+        display: flex;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+}
+
+.Ingredients-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        font-size: 40px;
+}
+
+.Welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .Welcome {
+            font-size: 25px;
+        }
+}
