@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 
-function Password_login() {
+function Password_login({password, onPasswordChange}) {
 
    const [visible, setVisible] = useState(false);
 
@@ -18,10 +18,12 @@ function Password_login() {
         className="Password_log"
         type={visible ? 'text' : 'password'}
         placeholder="Password"
+        value={password}
+        onChange={(e) => onPasswordChange(e.target.value)}
       />
-      <span className="eye-icon" onClick={toggleVisibility}>
+      <button className="eye-icon" onClick={toggleVisibility}>
         <FontAwesomeIcon icon={visible ? faEyeSlash : faEye} />
-      </span>
+      </button>
     </div>
   );
 }

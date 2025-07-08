@@ -1,10 +1,10 @@
 
 
-function Submit_btn() {
+function Submit_btn({onClick}) {
 
     return (
         <div className="SubmitBtn">
-            <button className="Submit" onClick={() => alert("Submit button coming soon!")}>Submit</button>
+            <button className="Submit" onClick={onClick} >Submit</button>
         </div>
     )
 }
