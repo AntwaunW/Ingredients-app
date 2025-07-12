@@ -15,3 +15,8 @@ function Footer() {
 };
 
 export default Footer;
+
+/*
+TODO: Eventually delete current place holders before site is officially launched.
+      Make links go to pages with actual content about the app itself
+*/

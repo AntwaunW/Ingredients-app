@@ -106,3 +106,7 @@ function Login() {
 };
 
 export default Login;
+
+/*
+TODO: Add logic from backend that stores users passwords securley
+*/

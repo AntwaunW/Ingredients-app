@@ -13,6 +13,8 @@ function SignIn() {
     const Login_pg = () => {
             navigate('/Login');
     }
+    //simple arrow function that uses navigate to go to selected page. Can be reused over again.
+    const goToSignUp = () => navigate('/SignUp');
 
   return  (
     <>
@@ -23,7 +25,7 @@ function SignIn() {
 
         <div className="SignIn-btns" >
           <button className="Starting Login-btn" onClick={Login_pg}>Login</button>
-          <button className="Starting SignUp-btn" onClick={() => alert('Sign Up coming soon!')}>Sign Up</button>
+          <button className="Starting SignUp-btn" onClick={goToSignUp}>Sign Up</button>
           <button className="Starting Try-btn" onClick={() => alert(' Guest Sign Up coming soon!')}>Try as Guest</button>
         </div>
           <div className="Socials">
