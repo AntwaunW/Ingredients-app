@@ -1,0 +1,138 @@
+
+[
+    {
+        "category": "Pantry",
+        "items": [ 
+            "Salt",
+            "Black Pepper",
+            "Garlic Powder",
+            "Onion Powder",
+            "Paprika",
+            "Cayenne Pepper",
+            "Cinnamon",
+            "Sugar",
+            "Brown Sugar",
+            "Flour",
+            "Baking Powder",
+            "Baking Soda",
+            "Olive Oil",
+            "Vegetable Oil",
+            "Vinegar",
+            "Soy Sauce",
+            "Hot Sauce",
+            "Honey",
+            "Peanut Butter",
+            "Canned Tomatoes",
+            "Canned Beans",
+            "Chicken Broth",
+            "Beef Broth",
+            "Rice",
+            "Pasta",
+            "Oats",
+            "Bread Crumbs",
+            "Cornstarch",
+            "Maple Syrup",
+            "Coffee",
+            "Tea" 
+        ]
+    },
+
+    {
+        "category": "Protein",
+        "items": [
+            "Chicken Breast",
+            "Ground Beef",
+            "Steak",
+            "Pork Chops",
+            "Bacon",
+            "Sausage",
+            "Turkey",
+            "Ground Turkey",
+            "Eggs",
+            "Tofu",
+            "Tempeh",
+            "Canned Tuna",
+            "Canned Salmon",
+            "Fresh Salmon",
+            "Shrimp",
+            "Lunch Meat",
+            "Black Beans",
+            "Chickpeas",
+            "Lentils",
+            "Greek Yogurt",
+            "Cottage Cheese",
+            "Cheddar Cheese",
+            "Mozzarella",
+            "Milk",
+            "Almond Milk"
+        ]
+    },
+
+    {
+        "category": "Frozen",
+        "items": [
+            "Frozen Broccoli",
+            "Frozen Spinach",
+            "Frozen Peas",
+            "Frozen Corn",
+            "Frozen Green Beans",
+            "Frozen Mixed Vegetables",
+            "Frozen Strawberries",
+            "Frozen Blueberries",
+            "Frozen Bananas",
+            "Frozen Pizza",
+            "Frozen Chicken Nuggets",
+            "Frozen Fish Fillets",
+            "Frozen Waffles",
+            "Frozen Fries",
+            "Frozen Tater Tots",
+            "Frozen Meals",
+            "Ice Cream"
+        ]
+    },
+
+    {
+        "category": "Dairy",
+        "items": [
+            "Milk",
+            "Heavy Cream",
+            "Half and Half",
+            "Butter",
+            "Cheddar Cheese",
+            "Mozzarella Cheese",
+            "Parmesan Cheese",
+            "Cream Cheese",
+            "Sour Cream",
+            "Greek Yogurt",
+            "Cottage Cheese",
+            "String Cheese",
+            "Yogurt Cups"
+        ]
+    },
+
+    {
+        "category": "Grains & Carbs",
+        "items": [
+            "White Rice",
+            "Brown Rice",
+            "Quinoa",
+            "Couscous",
+            "Pasta",
+            "Macaroni",
+            "Spaghetti",
+            "Bread",
+            "Tortillas",
+            "Bagels",
+            "English Muffins",
+            "Crackers",
+            "Cereal",
+            "Granola",
+            "Rolled Oats",
+            "Instant Oatmeal",
+            "Pita Bread",
+            "Hamburger Buns",
+            "Hot Dog Buns"
+        ]
+    }
+    
+] 

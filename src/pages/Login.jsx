@@ -12,7 +12,7 @@ function Login() {
   //code that lets users input email and store it. 
   const [email, setEmail] = useState('');
   const [isEmailValid, setIsEmailValid] = useState(false);
-  const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
+  const validateEmail = (email) => /\S+@\S+\.\S+/.test(email); //REACT REGEX TO CHECK IF FIELD MEETS REQUIREMENTS
   const handleEmailChange = (value) => {
     setEmail(value);
     setIsEmailValid(validateEmail(value));
@@ -51,8 +51,6 @@ function Login() {
    };
 
     const [rememberMe, setRememberMe] = useState(false);
-    
-
     const handleRememberMe = (event) => {
       const isChecked = event.target.checked;
       setRememberMe(isChecked)

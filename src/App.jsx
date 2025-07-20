@@ -7,6 +7,7 @@ import SignIn from './pages/Sign_In';
 import Landing from './pages/Landing';
 import LoginPage from './pages/Login';
 import SignUp from './pages/SignUp';
+import SelectIngredients from './pages/SelectIngredients';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/Login' element={<LoginPage />} />
           <Route path='/Sign_in' element={<SignIn />} />
           <Route path='/SignUp' element={<SignUp /> } />
+          <Route path='/SelectIngredients' element={<SelectIngredients />} />
       </Routes>
     </>  
   );

@@ -1,0 +1,65 @@
+@use '../styles/variables' as*;
+
+body {
+    background-color: $neutral-color;
+}
+
+.SelcIngrHead {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.foodImage {
+
+    img {
+        border-radius: 50px;
+        margin: .5rem;
+    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.ingredients-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.ingredients-list {
+  flex: 1; // flex-grow: 1; flex-shrink: 1; flex-basis: 0%; this is the long version for the shorthand used
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+
+  li {
+    margin-bottom: .2rem;
+  }
+}
+
+.ingredient-row h2 {
+  text-align: center;
+  margin-bottom: 1rem; // optional: adds space below title
+}
+
+.ingredient-navigation {
+    button{
+        flex: 1;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 20px;
+    }
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+}
+
+.finish-button {
+    color: white;
+    background-color: black;
+}

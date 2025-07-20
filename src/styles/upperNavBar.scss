@@ -1,0 +1,18 @@
+@use '../styles/variables' as *;
+
+.NavBarIcons {
+        a {
+            color: black;
+            font-size: 2rem;
+        }
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    list-style: none;
+    background-color: $primary-color;
+}
+
+a:hover {
+    color: white;
+}
