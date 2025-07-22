@@ -92,5 +92,5 @@ export default SelectIngredients;
 TODO: Store selected items
       link full page to other pages
       link finished page to next page
-      find a was to add small space between boxes nd items
+      find a was to add small space between boxes and items
 */

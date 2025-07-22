@@ -6,8 +6,12 @@ import Email from '../components/Email';
 import Password from "../components/Password";
 import Submit from "../components/Submit";
 import {useState, useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+
+    //navigates user to ingredients page once logged in
+  const navigate = useNavigate();
 
   //code that lets users input email and store it. 
   const [email, setEmail] = useState('');
@@ -40,7 +44,12 @@ function Login() {
           localStorage.removeItem('email');
         }
 
-        alert(`Email submitted: ${email} \nPassword submitted: ${password}`);
+        //ONLY NEEDED FOR TESTING
+        //alert(`Email submitted: ${email} \nPassword submitted: ${password}`);
+
+        if (handleSubmit) {
+              navigate('/SelectIngredients')
+        }
       }
 
       //clears input fields after submit has been executed
@@ -107,4 +116,5 @@ export default Login;
 
 /*
 TODO: Add logic from backend that stores users passwords securley
+      direct user to ingredients page once logged in
 */

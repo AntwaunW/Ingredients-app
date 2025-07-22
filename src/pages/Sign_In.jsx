@@ -1,6 +1,5 @@
 import '../styles/signin.scss';
 import profilePic from '../images/profile_pic.jpg';
-
 import { useNavigate } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

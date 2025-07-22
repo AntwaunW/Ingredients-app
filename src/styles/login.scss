@@ -84,11 +84,16 @@
 }
 
 .eye-icon {
-    color: rgba(0, 0, 0, 0.476);
+    color: $bold-color;
     position: absolute;
     right: 25px;
     bottom: 14px;
     border: none;
+    background: none;
+}
+
+.eye-icon:hover {
+    color: $bold-color;
     background: none;
 }
 

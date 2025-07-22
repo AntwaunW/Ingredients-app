@@ -49,10 +49,10 @@
             "Turkey",
             "Ground Turkey",
             "Eggs",
-            "Tofu",
-            "Tempeh",
+            "Chicken Wings",
+            "Fish",
             "Canned Tuna",
-            "Canned Salmon",
+            "Ground Chicken",
             "Fresh Salmon",
             "Shrimp",
             "Lunch Meat",
@@ -131,7 +131,8 @@
             "Instant Oatmeal",
             "Pita Bread",
             "Hamburger Buns",
-            "Hot Dog Buns"
+            "Hot Dog Buns",
+            "Potatoes"
         ]
     }
     

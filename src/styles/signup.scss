@@ -26,7 +26,7 @@
             padding: 1.5rem;
             width: 11.5rem;
             height: 30px;
-            font-size: 20px;
+            font-size: 18px;
             border: none;
             border-radius: 30px;
         }
@@ -40,7 +40,7 @@
             padding: 1.5rem;
             width: 11.5rem;
             height: 30px;
-            font-size: 15px;
+            font-size: 12px;
             border: none;
             border-radius: 30px;
         }
@@ -69,6 +69,22 @@ button:hover {
 .signUpFooter {
     position: relative;
     top: 26.5rem;
+}
+
+//Show and hide password
+
+.eye-icon1 {
+    position: absolute;
+    bottom: 10rem;
+    right: 2rem;
+    color: $bold-color;
+}
+
+.eye-icon2 {
+    position: absolute;
+    bottom: 6rem;
+    right: 2rem;
+    color: $bold-color;
 }
 
 /*
