@@ -2,9 +2,16 @@ import UpperNavBar from'../components/UpperNavBar';
 import '../styles/selectIngredients.scss';
 import FoodPic from '../images/Food_image.jpg';
 import IngredientSets from '../pages/IngredientSets.json';
-import { useState } from 'react';
+import { useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function SelectIngredients() {
+
+  const navigate = useNavigate();
+    const FoodStyle = () => {
+      navigate('/Food_Style')
+  };
+
   const [categoryIndex, setCategoryIndex] = useState(0);
   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -80,7 +87,7 @@ function SelectIngredients() {
         >
           Next
         </button>
-        <button className="finish-button">Finished</button>
+        <button className="finish-button" onClick={FoodStyle}>Finished</button>
       </div>
     </div>
   );

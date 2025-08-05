@@ -1,0 +1,16 @@
+
+[
+    {
+
+    "FoodGroup": [
+        {"id": "1", "name": "BBQ"},
+        {"id": "2", "name": "Mexican"},
+        {"id": "3", "name": "Italian"},
+        {"id": "4", "name": "Asian Cuisine"},
+        {"id": "5", "name": "Indian"},
+        {"id": "6", "name": "Jamaican"},
+        {"id": "7", "name": "Greek"},
+        {"id": "8", "name": "Soul Food"}
+        ]
+    }
+]
