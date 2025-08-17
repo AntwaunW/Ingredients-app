@@ -45,5 +45,57 @@
                 .prevBtn:hover {
                     background-color: orange;
                 }
+        .finishedBtn-container {
+            position: fixed;
+            bottom: .2rem;
+
+                .finishedBtn {
+                    width: 15rem;
+                }
+
+                    .finishedBtn:hover {
+                        background-color: black;
+                        color: white;
+                    }
+        }
 }
 
+.selected {
+    background-color: $primary-color;
+}
+
+// Modal code
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+}
+
+.btn-container {
+    button{
+        font-size: 20px;
+    }
+}
+
+.selectedFood-Names {
+    color: white;
+}

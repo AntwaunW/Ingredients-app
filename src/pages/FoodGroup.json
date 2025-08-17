@@ -10,7 +10,8 @@
         {"id": "5", "name": "Indian"},
         {"id": "6", "name": "Jamaican"},
         {"id": "7", "name": "Greek"},
-        {"id": "8", "name": "Soul Food"}
+        {"id": "8", "name": "Soul Food"},
+        {"id": "9", "name": "Other"}
         ]
     }
 ]

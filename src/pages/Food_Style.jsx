@@ -3,11 +3,43 @@ import NavBar from '../components/UpperNavBar';
 import HeroImg from '../images/Food_image.jpg';
 import FoodGroups from '../pages/FoodGroup.json';
 import {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function FoodStyle() {
 
+    //navigates to next page. If no item is selcted an alert shows
+    const navigate = useNavigate();
+
+    const newPage = () => {
+        if (selectedFood.length <= 0) {
+            alert("Please select at least 1 food style.")
+        } else {
+            setIsModalOpen(true)
+        }
+    };
+
+    //code that handles the modal opening and closing
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+        const handleContinue = () => {
+                setIsModalOpen(false);
+                    navigate('/GeneratingRecipes');
+        };
+
+        const handleGoBack = () => {
+            setIsModalOpen(false);
+        };
+
+    const foodItemsToRender = FoodGroups[0].FoodGroup;
     const [foodSelected, setFoodSelected] = useState(0);
     const [selectedFood, setSelectedFood] = useState([]);
+
+
+    const selectedFoodNames = selectedFood.map(id => {
+        const foundItem = foodItemsToRender.find(item => item.id === id);
+        return foundItem.name;
+    });
 
    const handleFoodSelectionToggle = () => {
         if (!currentFoodItem) {
@@ -35,8 +67,6 @@ function FoodStyle() {
     const handlePrevious = () => {
         setFoodSelected ((foodSelected -1 + foodItemsToRender.length) % foodItemsToRender.length)
     };
-
-    const foodItemsToRender = FoodGroups[0].FoodGroup;
 
     const currentFoodItem = foodItemsToRender?.[foodSelected]; /*The ?. is like a seatbelt for your code. It prevents your app from crashing if the data you're trying to use isn't there for some reason. */ 
 
@@ -80,6 +110,39 @@ function FoodStyle() {
                 >
                     Next
                 </button>
+                <span className="finishedBtn-container" >
+                    <button
+                    className="finishedBtn"
+                    onClick={newPage}
+                    >
+                        Finished
+                    </button>
+                </span>
+                {/* code for y modal. Opens and closes modal based on users selections */}
+                {isModalOpen ? (
+                    <div className="modal-overlay">
+                        <div className="modal-content">
+                            <h2>Confirm your selection!</h2>
+                                {selectedFoodNames.map(name => {
+                                    return <p className="selectedFood-Names" >{name}</p>
+                                })}
+                                <span className="btn-container" >
+                                    <button
+                                    onClick={handleGoBack}
+                                    className="modalGoBack"
+                                    >
+                                        Go Back
+                                    </button>
+                                    <button
+                                    onClick={handleContinue}
+                                    className="modalContinue"
+                                    >
+                                        Continue
+                                    </button>
+                                </span>
+                        </div>
+                    </div>
+                ) : null}
             </div>
         </div>
     );
