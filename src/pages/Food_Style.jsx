@@ -7,8 +7,15 @@ import { useNavigate } from 'react-router-dom';
 
 function FoodStyle() {
 
-    //navigates to next page. If no item is selcted an alert shows
+    
     const navigate = useNavigate();
+       /* Code that may be added later for navigation
+       const recipeList = () => {
+            navigate('/RecipeList')
+  };
+  */
+
+    //navigates to next page. If no item is selcted an alert shows
 
     const newPage = () => {
         if (selectedFood.length <= 0) {
@@ -122,7 +129,7 @@ function FoodStyle() {
                 {isModalOpen ? (
                     <div className="modal-overlay">
                         <div className="modal-content">
-                            <h2>Confirm your selection!</h2>
+                            <h2 className="modal_confirm" >Confirm your selection!</h2>
                                 {selectedFoodNames.map(name => {
                                     return <p className="selectedFood-Names" >{name}</p>
                                 })}

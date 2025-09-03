@@ -1,30 +1,39 @@
 TODO LIST
 
 // Pages left to create
+
         1) Style Food (finish)
               ✓  - add slide left and right feature to food style button (LATER FEATURE)
-                - Add function to style of food page. Allow selected food groups to remain highlighted and stored unless un highlighted (deselcted)
+                ✓- Add function to style of food page. Allow selected food groups to remain highlighted and stored unless un highlighted (deselcted)
+                - fix confirm your selection
         2) Generating recipes / searching page (as system looks for recipes)
         3) Page that reveals all meals based off users slected inputs
         4) Calander Page
         5) User profile (w/profile pic)
         6) Bookmark / Favorite meal saves
-        7) Home page
-        8) Try as guest (later feature)
-        9) feeding how many (later feature)
+        7) Home / profile page
 
 // Features left to implement 
+
  - Add social media navigation to each icon
  - Allow users to store password data by creating secure backend
  - API (Spoontacular) / add recipes
  - Create 6-8 identical food recipe cards per page
  - previous / next button that lets user cycle through all populated options
- - page counter to shower user pages not seen or seen
+ - page counter to show user pages not seen or seen
  - button under each recipe that allows users to store recipe on calendar or bookmark for favorites
  - fully functional calander that updates in real time
  - user profile that stores simple data about user
  - Make entire web app responsive (different phone sizes, laptop/ipads, desktops)
- - add Breakfast, Lunc and Dinner options
+ - add Breakfast, Lunch and Dinner options
+ - add progress bar(or something) that allows users to see where they are
+ - feature that will keep selections checked even when they leave the page
+ - add 1-5 star ranking for each meal
+ - feature that tells you how many ingredienst you are missing for a recipe
+ - ingredient match indicator (ex: "this dish has 8 of the 10 ingredients you selected)
+ - save to favorites heart icon
+ - "I made this" button for user engagement
+ - Pantry check (collection of Items the system already knows you have on hand)
 
 
 // Big features to add*
@@ -32,3 +41,14 @@ TODO LIST
     1) Backend functionality
     2) Password verification and save ability
     3) Storage to save selceted recipes
+
+// Features to add later
+
+- Select how many people to cook for
+- Shopping list
+- Macros / allergy page
+- Try as guest (later feature)
+- Meal type
+- Difficulty level
+- Cooking time preference
+- Barcode scanner for macros

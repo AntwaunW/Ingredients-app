@@ -10,6 +10,7 @@ import SignUp from './pages/SignUp';
 import SelectIngredients from './pages/SelectIngredients';
 import FoodStyle from './pages/Food_Style';
 import GenerateRecipes from './pages/GeneratingRecipes';
+import RecipeList from './pages/RecipeList';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/SelectIngredients' element={<SelectIngredients />} />
           <Route path='/Food_Style' element={<FoodStyle />} />
           <Route path='/GeneratingRecipes' element={<GenerateRecipes />} />
+          <Route path='/RecipeList' element={<RecipeList />} />
       </Routes>
     </>  
   );
