@@ -19,7 +19,6 @@ TODO LIST
  - Allow users to store password data by creating secure backend
  - API (Spoontacular) / add recipes
  - Create 6-8 identical food recipe cards per page
- - previous / next button that lets user cycle through all populated options
  - page counter to show user pages not seen or seen
  - button under each recipe that allows users to store recipe on calendar or bookmark for favorites
  - fully functional calander that updates in real time
@@ -28,10 +27,8 @@ TODO LIST
  - add Breakfast, Lunch and Dinner options
  - add progress bar(or something) that allows users to see where they are
  - feature that will keep selections checked even when they leave the page
- - add 1-5 star ranking for each meal
  - feature that tells you how many ingredienst you are missing for a recipe
  - ingredient match indicator (ex: "this dish has 8 of the 10 ingredients you selected)
- - save to favorites heart icon
  - "I made this" button for user engagement
  - Pantry check (collection of Items the system already knows you have on hand)
 

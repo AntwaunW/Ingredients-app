@@ -1,0 +1,108 @@
+@use './variables' as*;
+
+.backCard {
+    margin: 1rem;
+    padding: 1rem;
+    height: 10rem;
+    width: 12rem;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+
+    h2 {
+        padding-bottom: .5rem;
+    }
+
+    .star-ratings {
+        padding-bottom: .5rem;
+    }
+}
+
+.slc-recipe-btn {
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.frontCard {
+    background-color: white;
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 10px;
+    align-items: center;
+}
+
+.Card-container {
+    transition: opacity 0.3s ease-in-out;
+
+    &:active {
+        transform:scale(0.98);
+    }
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-items: center;
+
+//code below allows the cards in the grid to scroll and keep the overall app as a native feel
+    overflow-y: auto;
+    max-height: 90vh;
+
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// --- Pagination controls ---
+
+.pgination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    button {
+        background-color: #ff7043;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover:not(:disabled) {
+            background-color: #ff5722;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    span {
+        font-size: 1rem;
+        color: #333;
+    }
+}
