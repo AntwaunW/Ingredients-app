@@ -80,6 +80,7 @@ function GeneratedRecipes() {
             <Navbar />
 
             {/*Recipe Grid */}
+             {/*The code below takes the new array of recipe cards, loops through them using .map and creates a card for each individual recipe */}
             <div className="recipe-grid" >
                 {currentRecipes.map((recipe) => (
                     <RecipeCard recipe={recipe} key={recipe.id} />
@@ -97,15 +98,6 @@ function GeneratedRecipes() {
                     </button>
                 </div>
             </div>
-
-            {/*The code below takes the new array of recipe cards, loops through them using .map and creates a card for each individual recipe */}
-            <div className="recipe-grid" >
-                {mockRecipe.map(recipe => (
-                    <RecipeCard recipe={recipe} key={recipe.id} />            
-                ))}
-            </div>
-
-            
         </div>
     )
 }

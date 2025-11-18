@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/upperNavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faCalendarDays, faBookmark, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -6,10 +7,29 @@ function upperNavBar() {
     return (
         <div>
             <ul className="NavBarIcons" >
-                <li><a href="#"><FontAwesomeIcon icon={faHouse} /></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faCalendarDays} /></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faBookmark} /></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faUser} /></a></li>
+                <Link to="/Landing">
+                    <li>
+                        <FontAwesomeIcon icon={faHouse} />
+                    </li>
+                </Link>
+
+                <Link to="/Calendar">
+                    <li>
+                        <FontAwesomeIcon icon={faCalendarDays} />
+                    </li>
+                </Link>
+
+                <Link to="/Favorites">
+                    <li>
+                        <FontAwesomeIcon icon={faBookmark} />
+                    </li>
+                </Link>
+
+                <Link to="/UserPage">
+                    <li>
+                        <FontAwesomeIcon icon={faUser} />
+                    </li>
+                </Link>
             </ul>
         </div>
     );

@@ -49,3 +49,13 @@ TODO LIST
 - Difficulty level
 - Cooking time preference
 - Barcode scanner for macros
+-Be able to keep recipes saved on passed dates for users to keep track of
+-Plus sign on calendar should be visible as you hover over each date
+
+
+Tech Debt:
+prev/next button for recipes (edit look)
+navbar functions
+password setup
+backend
+API

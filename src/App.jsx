@@ -11,6 +11,10 @@ import SelectIngredients from './pages/SelectIngredients';
 import FoodStyle from './pages/Food_Style';
 import GenerateRecipes from './pages/GeneratingRecipes';
 import RecipeList from './pages/RecipeList';
+import Home from './pages/Landing';
+import Calendar from './pages/Calendar';
+import Favorites from './pages/Favorites';
+import UserPage from './pages/UserPage';
 
 
 function App() {
@@ -26,6 +30,10 @@ function App() {
           <Route path='/Food_Style' element={<FoodStyle />} />
           <Route path='/GeneratingRecipes' element={<GenerateRecipes />} />
           <Route path='/RecipeList' element={<RecipeList />} />
+          <Route path='/Calendar' element={<Calendar />} />
+          <Route path='/Favorites' element={<Favorites />} />
+          <Route path='/UserPage' element={<UserPage />} />
+          <Route path='/Landing' element={<Home />} />
       </Routes>
     </>  
   );
