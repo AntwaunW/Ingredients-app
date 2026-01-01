@@ -1,4 +1,5 @@
 import Navbar from '../components/UpperNavBar';
+import '../styles/userPage.scss';
 
 function UserPage() {
     return(
