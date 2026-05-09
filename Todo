@@ -1,516 +1,221 @@
 
-# Ingredients App – Master TODO & Workflow Guide
+# Ingredients App – Solo Developer Workflow
 
-This guide reorganizes your existing TODO list into **clear phases**, **checkable tasks**, and a **logical build order**. Each item is written so you can delete it as you complete it.
+## ✅ MASTER TODO LIST (HIGH-LEVEL)
 
----
+> This is your **single source of truth** TODO list. Each item represents a complete system or feature.
 
-## PHASE 1: CORE USER FLOW (MVP PATH)
+### 🧠 Core Application
 
-> Goal: User selects ingredients → gets recipes → saves meals
-
-### 1️⃣ Food Style / Preferences Page
-
-* [ ] Fix **"Confirm your selection"** behavior
-* [ ] Ensure selected food styles **stay highlighted** unless deselected
-* [ ] Persist food style selections when navigating away
+* [ ] Add backend architecture
+* [ ] Integrate Spoonacular API
+* [ ] Implement secure password storage
+* [ ] Make app fully responsive (mobile → desktop)
+* [ ] Fix alignment issues across all screen sizes
 
 ---
 
-### 2️⃣ Recipe Search / Generation Page
+### 🍳 Get Cooking (Main Page)
 
-* [ ] Create loading/searching screen while recipes generate
-* [ ] Integrate **Spoonacular API** for recipe fetching
-* [ ] Generate **6–8 identical recipe cards per page**
-* [ ] Add **prev / next page buttons** for recipes
-* [ ] Add page counter (seen vs unseen pages)
+* [ ] Add user icon navigation (top-right)
+* [ ] Add functional social media links (footer)
 
 ---
 
-### 3️⃣ Recipe Results Page (Based on User Inputs)
+### 🔐 Login / Signup
 
-* [ ] Display meals filtered by:
-
-  * Selected ingredients
-  * Food styles
-  * Meal type (Breakfast / Lunch / Dinner)
-* [ ] Show ingredient match indicator (e.g. “8 of 10 ingredients matched”)
-* [ ] Show missing ingredients count
-* [ ] Add "I made this" engagement button
+* [ ] Implement signup storage (name, email, password)
+* [ ] Create signup button functionality
+* [ ] Add remember-me storage
+* [ ] Store previously used emails locally
+* [ ] Create forgot-password backend + page
+* [ ] Add user icon navigation
 
 ---
 
-### 4️⃣ Calendar Page
+### 🥗 Style of Food
 
-* [ ] Build calendar UI
-* [ ] Enable saving recipes to specific dates
-* [ ] Make calendar update in real time
-* [ ] Add visible **plus (+) button** on hover for each date
-* [ ] Allow past dates to retain saved recipes
+* [ ] Fix food-style modal popup
+* [ ] Persist food-style selections
 
 ---
 
-### 5️⃣ Favorites / Bookmarks
+### ⏳ Generating Recipes
 
-* [ ] Bookmark recipe from recipe card
-* [ ] View all saved recipes on Favorites page
-* [ ] Remove recipe from favorites
-
----
-
-### 6️⃣ Home / User Landing Page
-
-* [ ] Create Home page layout
-* [ ] Display quick links (Calendar, Favorites, Pantry)
-* [ ] Add progress indicator showing where user is in flow
+* [ ] Sync loading screen with real API/backend timing
+* [ ] Auto-navigate to recipe list when generation completes
 
 ---
 
-## PHASE 2: USER PROFILE & DATA PERSISTENCE
+### 📋 Recipe List
 
-> Goal: Personalization + saved state
-
-### 7️⃣ User Profile Page
-
-* [ ] Profile picture upload
-* [ ] Store basic user info
-* [ ] Persist user selections across sessions
-
----
-
-### 8️⃣ Pantry System
-
-* [ ] Create pantry item list
-* [ ] Allow users to add/remove pantry items
-* [ ] Use pantry data to influence recipe matching
+* [ ] Populate recipe cards with real API data
+* [ ] Paginate recipes (6 per page)
+* [ ] Center pagination controls on all screen sizes
+* [ ] Generate pages for all API results
+* [ ] Add recipe rating system (1–5 stars)
+* [ ] Calculate and display average ratings
+* [ ] Add finish button → navigate to calendar
+* [ ] Add modal calendar for selecting recipe dates
 
 ---
 
-## PHASE 3: AUTHENTICATION & BACKEND
+### ⭐ Favorites
 
-> Goal: Secure user accounts + saved data
-
-### 9️⃣ Backend Setup
-
-* [ ] Choose backend (Firebase / Supabase / custom)
-* [ ] Set up database schema
-* [ ] Connect frontend to backend
+* [ ] Store favorite recipes
+* [ ] Display favorites page
+* [ ] Remove recipes from favorites
+* [ ] Paginate favorites (6 per page)
+* [ ] Add favorite recipes to calendar
 
 ---
 
-### 🔐 Authentication
+### 👤 User Page
 
-* [ ] Password creation & validation
-* [ ] Secure password storage
-* [ ] Login / logout flow
-* [ ] Store user data securely
-
----
-
-### 💾 Persistent Storage
-
-* [ ] Save selected recipes
-* [ ] Save calendar meals
-* [ ] Save pantry items
-* [ ] Save food preferences
+* [ ] Create user profile layout
+* [ ] Add profile image
+* [ ] Add bio & username
+* [ ] Add password reset option
 
 ---
 
-## PHASE 4: UI / UX POLISH & RESPONSIVENESS
+## 🧩 DETAILED TICKETS / ISSUES
 
-> Goal: App feels smooth and complete
+> These are **execution-level tasks** you can copy into GitHub Issues or a task board.
 
-### 📱 Responsive Design
+### BACKEND & INFRASTRUCTURE
 
-* [ ] Mobile-first layout
-* [ ] Tablet support
-* [ ] Desktop support
-* [ ] Test different phone sizes
-
----
-
-### 🧭 Navigation & UI Fixes
-
-* [ ] Fix navbar functionality
-* [ ] Improve recipe card UI
-* [ ] Edit prev/next button styling
-* [ ] Add social media links to icons
+* Backend setup (Node + Express)
+* MongoDB connection & schema design
+* Auth flow (signup, login, reset)
+* Password hashing (bcrypt)
 
 ---
 
-## PHASE 5: ADVANCED & FUTURE FEATURES
+### API INTEGRATION
 
-> Add after MVP is stable
-
-### 🍽️ Cooking Preferences
-
-* [ ] Select number of people to cook for
-* [ ] Cooking difficulty level
-* [ ] Cooking time preference
-* [ ] Meal type filtering
+* Spoonacular API service file
+* Recipe fetch logic
+* API error handling
+* Loading state synchronization
 
 ---
 
-### 🛒 Planning & Nutrition
+### AUTH & STORAGE
 
-* [ ] Shopping list generation
-* [ ] Macros tracking
-* [ ] Allergy preferences
-* [ ] Barcode scanner for macros
-
----
-
-### 🚀 Growth Features
-
-* [ ] Try as guest mode
-* [ ] Keep historical meal data
+* Signup form validation
+* Remember-me logic
+* Email storage (localStorage)
+* Forgot password token handling
 
 ---
 
-## TECH DEBT (TRACK SEPARATELY)
+### UI / UX
 
-> Address as system matures
-
-* [ ] Backend optimization
-* [ ] API optimization & error handling
-* [ ] Password setup cleanup
-* [ ] Navbar refactor
+* Responsive SCSS refactor
+* Pagination layout fixes
+* Modal calendar UX
+* Rating UI (stars)
 
 ---
 
-## RECOMMENDED BUILD ORDER
+### STATE MANAGEMENT
 
-1. Food Style Page
-2. Recipe Generation
-3. Recipe Results
-4. Favorites
-5. Calendar
-6. Home Page
-7. User Profile
-8. Backend + Auth
-9. Pantry System
-10. Polish & Extras
-
-
-
-
-
-
-# Ingredients App – GitHub Issues / Tickets
-
-Use this document directly as **GitHub Issues**. Each section = milestone. Each bullet = one issue.
-You can copy/paste each issue into GitHub as-is.
+* Food style persistence
+* Favorites storage
+* Ratings storage
+* Calendar recipe storage
 
 ---
 
-## 🧱 MILESTONE 1: Food Style & Preferences
+## 🗓️ WEEKLY SPRINT PLAN (30–45 MIN / DAY)
 
-### ISSUE 1: Fix Confirm Selection Button
+> Sprint Length: **7 days**
+> Goal: **Establish backend + API foundation**
 
-* **Description:** Confirm button does not properly finalize user food style selections
-* **Acceptance Criteria:**
+### 🔹 Day 1 – Architecture & Setup (30–45 min)
 
-  * Clicking confirm locks in selected food styles
-  * User can proceed without losing selections
-
----
-
-### ISSUE 2: Persist Food Style Selection State
-
-* **Description:** Selected food styles should remain highlighted unless deselected
-* **Acceptance Criteria:**
-
-  * Selected styles remain active on re-render
-  * Deselection works correctly
+* Decide backend stack (recommended below)
+* Initialize backend repo
+* Connect MongoDB
 
 ---
 
-### ISSUE 3: Persist Selections Across Page Navigation
+### 🔹 Day 2 – Auth Foundation
 
-* **Description:** Food style selections reset when navigating away
-* **Acceptance Criteria:**
-
-  * Selections remain when user leaves and returns
-  * Uses state, context, or storage
+* Create user schema
+* Add password hashing
 
 ---
 
-## 🍳 MILESTONE 2: Recipe Generation & Search
+### 🔹 Day 3 – Signup Flow
 
-### ISSUE 4: Create Recipe Loading Screen
-
-* **Description:** Show loading UI while recipes are fetched
-* **Acceptance Criteria:**
-
-  * Spinner or message displays during fetch
-  * User cannot interact with empty results
+* Signup form → backend
+* Store user data securely
 
 ---
 
-### ISSUE 5: Integrate Spoonacular API
+### 🔹 Day 4 – Login + Remember Me
 
-* **Description:** Fetch recipes based on user inputs
-* **Acceptance Criteria:**
-
-  * API call returns recipes
-  * Handles loading and error states
+* Login endpoint
+* Remember-me logic
 
 ---
 
-### ISSUE 6: Render Recipe Cards (6–8 Per Page)
+### 🔹 Day 5 – Spoonacular API
 
-* **Description:** Display recipe cards consistently
-* **Acceptance Criteria:**
-
-  * 6–8 cards per page
-  * Card layout is reusable
+* API service setup
+* Fetch recipes successfully
 
 ---
 
-### ISSUE 7: Add Pagination (Prev / Next)
+### 🔹 Day 6 – Loading + Navigation
 
-* **Description:** Allow users to page through recipe results
-* **Acceptance Criteria:**
-
-  * Prev/Next buttons work
-  * State updates correctly
+* Sync loading screen
+* Navigate to recipe list when ready
 
 ---
 
-### ISSUE 8: Page Counter Indicator
+### 🔹 Day 7 – Review & Cleanup
 
-* **Description:** Show how many recipe pages are viewed/unviewed
-* **Acceptance Criteria:**
-
-  * Page count visible
-  * Updates as user navigates
+* Test flows end-to-end
+* Fix bugs
+* Plan next sprint
 
 ---
 
-## 🍽️ MILESTONE 3: Recipe Results Logic
+## 🛠️ BACKEND RECOMMENDATION (FOR YOU)
 
-### ISSUE 9: Filter Recipes by User Inputs
+Given your stack and goals:
 
-* **Description:** Recipes should respect selected ingredients and styles
-* **Acceptance Criteria:**
+**Recommended:**
 
-  * Only valid recipes are shown
+* Backend: **Node.js + Express**
+* Database: **MongoDB (Atlas)**
+* Auth: **JWT + bcrypt**
+* Hosting (later): Render / Railway
 
----
+This setup:
 
-### ISSUE 10: Ingredient Match Indicator
-
-* **Description:** Show ingredient match score
-* **Acceptance Criteria:**
-
-  * Example: "8 of 10 ingredients matched"
-
----
-
-### ISSUE 11: Missing Ingredients Counter
-
-* **Description:** Show how many ingredients user is missing
-* **Acceptance Criteria:**
-
-  * Accurate missing count displayed
+* Scales well
+* Is React-friendly
+* Is industry standard
 
 ---
 
-### ISSUE 12: Add "I Made This" Button
+## 🚀 FUTURE FEATURES (OUT OF SCOPE FOR NOW)
 
-* **Description:** Engagement feature for completed meals
-* **Acceptance Criteria:**
-
-  * Button toggles state
-  * Can be stored later
-
----
-
-## 📅 MILESTONE 4: Calendar
-
-### ISSUE 13: Build Calendar UI
-
-* **Description:** Display calendar grid
-* **Acceptance Criteria:**
-
-  * Shows days correctly
+* Recipe search
+* Cooking streak tracker
+* Macros & nutrition
+* Paid features
 
 ---
 
-### ISSUE 14: Save Recipe to Calendar Date
+### Final Rule (Very Important)
 
-* **Description:** Assign recipe to a selected date
-* **Acceptance Criteria:**
+> If a task can’t be finished in **one sprint**, it’s too big.
+> Break it down.
 
-  * Recipe appears on correct day
 
----
 
-### ISSUE 15: Real-Time Calendar Updates
-
-* **Description:** Calendar updates without refresh
-* **Acceptance Criteria:**
-
-  * UI reflects changes instantly
-
----
-
-### ISSUE 16: Calendar Hover Plus Button
-
-* **Description:** Show + button on date hover
-* **Acceptance Criteria:**
-
-  * Visible on hover
-  * Clickable
-
----
-
-### ISSUE 17: Preserve Past Date Recipes
-
-* **Description:** Past calendar entries remain visible
-* **Acceptance Criteria:**
-
-  * Past meals persist
-
----
-
-## ⭐ MILESTONE 5: Favorites
-
-### ISSUE 18: Bookmark Recipe
-
-* **Description:** Save recipe as favorite
-* **Acceptance Criteria:**
-
-  * Toggle bookmark state
-
----
-
-### ISSUE 19: Favorites Page
-
-* **Description:** Display saved recipes
-* **Acceptance Criteria:**
-
-  * Lists all favorites
-
----
-
-### ISSUE 20: Remove Favorite
-
-* **Description:** Allow users to unbookmark
-* **Acceptance Criteria:**
-
-  * Recipe removed from list
-
----
-
-## 🏠 MILESTONE 6: Home & Navigation
-
-### ISSUE 21: Build Home Page Layout
-
-* **Description:** Create landing page after login
-
----
-
-### ISSUE 22: Add Progress Indicator
-
-* **Description:** Show user progress through flow
-
----
-
-### ISSUE 23: Fix Navbar Functionality
-
-* **Description:** Navbar links and state issues
-
----
-
-### ISSUE 24: Add Social Media Navigation
-
-* **Description:** Link icons to social profiles
-
----
-
-## 👤 MILESTONE 7: User Profile
-
-### ISSUE 25: Profile Page Layout
-
-* **Description:** Display user info and avatar
-
----
-
-### ISSUE 26: Profile Picture Upload
-
-* **Description:** Allow image upload
-
----
-
-### ISSUE 27: Persist User Data
-
-* **Description:** Save basic profile info
-
----
-
-## 🥫 MILESTONE 8: Pantry System
-
-### ISSUE 28: Pantry UI
-
-* **Description:** Add/remove pantry items
-
----
-
-### ISSUE 29: Pantry → Recipe Matching
-
-* **Description:** Use pantry data for recipe logic
-
----
-
-## 🔐 MILESTONE 9: Backend & Auth
-
-### ISSUE 30: Backend Setup
-
-* **Description:** Choose and initialize backend
-
----
-
-### ISSUE 31: Authentication Flow
-
-* **Description:** Login / logout / password handling
-
----
-
-### ISSUE 32: Secure Data Storage
-
-* **Description:** Persist user data securely
-
----
-
-## 🧹 TECH DEBT
-
-### ISSUE 33: API Error Handling
-
-### ISSUE 34: Backend Optimization
-
-### ISSUE 35: Password Refactor
-
-### ISSUE 36: Navbar Refactor
-
----
-
-## 🚀 FUTURE FEATURES (LOW PRIORITY)
-
-### ISSUE 37: Shopping List
-
-### ISSUE 38: Nutrition & Macros
-
-### ISSUE 39: Guest Mode
-
-### ISSUE 40: Cooking Preferences
-
----
-
-## RECOMMENDED FIRST SPRINT
-
-* ISSUE 1
-* ISSUE 2
-* ISSUE 3
-* ISSUE 4
-* ISSUE 5

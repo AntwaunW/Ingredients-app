@@ -48,6 +48,7 @@ function FavoritesPage() {
 
 
     return(
+       
        <div className="favorites-page">
         <Navbar />
             <h1 className="favorites-title">Your Favorites</h1>

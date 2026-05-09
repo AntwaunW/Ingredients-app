@@ -1,5 +1,5 @@
 .calendar-page {
-  padding: .6rem;
+  padding: 0.5rem;
   text-align: center;
   overflow: hidden;
 }
@@ -8,19 +8,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0 0.25rem;
 
   h2 {
     margin: 0;
+    font-size: clamp(0.9rem, 4vw, 1.25rem);
   }
 
   button {
     background-color: black;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.6rem;
     border-radius: 8px;
     cursor: pointer;
+    font-size: clamp(0.75rem, 3vw, 1rem);
 
     &:active {
       transform: scale(0.95);
@@ -31,33 +34,57 @@
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.5rem;
+  gap: 0.25rem;
+
+  @media (min-width: 480px) {
+    gap: 0.4rem;
+  }
+
+  @media (min-width: 768px) {
+    gap: 0.5rem;
+  }
 }
 
 .day-labels {
   font-weight: bold;
+  font-size: clamp(0.55rem, 2vw, 0.9rem);
 }
 
 .calendar-day {
-  padding: 1rem;
+  position: relative;
+  padding: 0.25rem 0.15rem;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 6px;
   border: 1px solid #ddd;
   cursor: pointer;
+  font-size: clamp(0.6rem, 2vw, 0.9rem);
+  min-height: 2rem;
 
   .add-button {
     position: absolute;
-    top: 2px;
-    right: 4px;
+    top: 1px;
+    right: 2px;
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
     cursor: pointer;
+    padding: 0;
+    line-height: 1;
     transition: 0.2s ease;
 
     &:active {
-        transform: scale(0.9);
+      transform: scale(0.9);
     }
+  }
+
+  @media (min-width: 480px) {
+    padding: 0.5rem 0.3rem;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0.75rem 0.5rem;
+    border-radius: 10px;
   }
 
   &:hover {
@@ -74,8 +101,8 @@
 }
 
 .calendar-day.has-events {
-    background-color: #ffe9b3;
-    border: 2px solid #ffbb33;
-    border-radius: 8px;
-    transition: 0.2s ease;
+  background-color: #ffe9b3;
+  border: 2px solid #ffbb33;
+  border-radius: 8px;
+  transition: 0.2s ease;
 }

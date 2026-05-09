@@ -29,14 +29,14 @@ body {
 }
 
 .ingredients-list {
-  flex: 1; // flex-grow: 1; flex-shrink: 1; flex-basis: 0%; this is the long version for the shorthand used
+  flex: 1;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: clamp(11px, 2.5vw, 14px);
 
   li {
-    margin-bottom: .2rem;
+    margin-bottom: .3rem;
   }
 }
 

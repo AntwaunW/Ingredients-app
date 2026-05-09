@@ -1,29 +1,29 @@
 @use './variables' as*;
 
-//Background code
+//Background wave curves
 
 .Container {
     position: relative;
     top: 11px;
     width: 100%;
-    height: 300px; // adjust based on your layout
+    height: 300px;
     overflow: hidden;
 }
 
 .Darkgreen {
-    background-color: $primary-color; // light green
+    background-color: $primary-color;
     bottom: 100px;
     z-index: 1;
 }
 
 .Lightgreen {
-    background-color: $secondary-green; // darker green
+    background-color: $secondary-green;
     bottom: 70px;
     z-index: 2;
 }
 
 .Black {
-    background-color: $bold-color; // black
+    background-color: $bold-color;
     bottom: 40px;
     z-index: 3;
 }
@@ -34,7 +34,6 @@
     z-index: 4;
 }
 
-
 .curve {
     position: absolute;
     width: 150%;
@@ -44,20 +43,24 @@
     transform: translateX(-50%);
 }
 
-//Btn code
+//Cook button
+
+.Cooking-btn {
+    display: flex;
+    justify-content: center;
+}
 
 .Cook-btn {
     position: relative;
     color: black;
     z-index: 4;
     top: 70px;
-    left: 23%;
-    font-size: 1.5rem;
-    padding: 10px;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 10px 20px;
     border-radius: 30px;
     border: none;
     height: auto;
-    width: 200px;
+    width: clamp(160px, 50vw, 220px);
 }
 
 .Cook-btn:hover {
@@ -65,10 +68,10 @@
     color: white;
     background-color: $bold-color;
     box-shadow: 0 0 20px 5px orange;
-    transition: box-shadow 0.3s ease-in-out; //eases the fade of the glow in the back
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-//Socials
+//Social icons
 
 .Social-icons {
     display: flex;
@@ -78,10 +81,11 @@
     align-content: center;
     gap: 1rem;
     z-index: 5;
-    font-size: 30px;
+    font-size: 1.75rem;
     color: white;
+    padding: 0 1rem;
 
-    a{
+    a {
         color: white;
     }
 }

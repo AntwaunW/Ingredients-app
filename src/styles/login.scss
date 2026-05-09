@@ -1,85 +1,44 @@
 @use './variables' as*;
 
-//backgound and socials
-
 .login-pg {
     background-color: $neutral-color;
     min-height: 100vh;
-    z-index: 0;
     position: relative;
-
-    .background {
-    position: absolute;
-    top: 426px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    } 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 270px;
+    overflow: hidden;
 }
 
-//login title
 .login_title {
-    position: absolute;
-    font-size: 3rem; //scales with root font size
-    left: 31vw; //5% of vieport width
-    top: 16vh; //10% of viewport height
-}
-
-
-//remember me and forgot password
-
-.Remember_forgot {
-    position: absolute; //position relative overlaps the container and throws off the entire background
-    font-size: 0.5rem;
-    top: 330px;
-    left: 27.15vw;
-    z-index: 2;
-
-    .remember {
-        padding: 10px;
-    }
-}
-
-//submit button
-//the email and password entry container
-.Submit {
-    position: relative;
-    color: black;
-    left: 38%;
-    top: 300px;
-    border: none;
-    padding: 10px;
-    height: auto;
-    min-width: 5rem;
-    border-radius: 30px; //to get rounded corners at any length use px over %
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .login_info {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    top: 200px;
-    left: 90px;
-    gap: 30px;
+    width: 100%;
+    max-width: 300px;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
-//email code
-//this code is designing for the email component alone
 .Email_input {
     padding: 1rem;
     border: none;
     height: auto;
-    width: 200px;
+    width: 100%;
     border-radius: 30px;
 }
-
-//password code
 
 .Password_log {
     padding: 1rem;
     border: none;
     height: auto;
-    width: 200px;
+    width: 100%;
     border-radius: 30px;
 }
 
@@ -97,8 +56,57 @@
     background: none;
 }
 
+.SubmitBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    padding: 0 1rem;
+}
+
+.Submit {
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    height: auto;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.Remember_forgot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+
+    .remember {
+        padding: 0 0.25rem;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
 .footer {
     position: absolute;
-    bottom: -5.875rem;
-    left: 6.625rem;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+
+    .Social-icons {
+        position: static;
+        color: white;
+    }
 }

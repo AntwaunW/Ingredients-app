@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter } from 'react-router-dom';
-
+import { FavoritesProvider } from './pages/FavoritesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <FavoritesProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </FavoritesProvider>
   </BrowserRouter>
 );
 
