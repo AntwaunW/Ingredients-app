@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ingredients-app/static/css/main.d6da4036.css",
-    "main.js": "/Ingredients-app/static/js/main.a3cdf6f7.js",
+    "main.js": "/Ingredients-app/static/js/main.dcb89731.js",
     "static/js/453.408565d9.chunk.js": "/Ingredients-app/static/js/453.408565d9.chunk.js",
     "static/media/Food_image.jpg": "/Ingredients-app/static/media/Food_image.ca8e09c923827b44515f.jpg",
     "static/media/fa-solid-900.ttf": "/Ingredients-app/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -15,11 +15,11 @@
     "static/media/fa-v4compatibility.woff2": "/Ingredients-app/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Ingredients-app/index.html",
     "main.d6da4036.css.map": "/Ingredients-app/static/css/main.d6da4036.css.map",
-    "main.a3cdf6f7.js.map": "/Ingredients-app/static/js/main.a3cdf6f7.js.map",
+    "main.dcb89731.js.map": "/Ingredients-app/static/js/main.dcb89731.js.map",
     "453.408565d9.chunk.js.map": "/Ingredients-app/static/js/453.408565d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6da4036.css",
-    "static/js/main.a3cdf6f7.js"
+    "static/js/main.dcb89731.js"
   ]
 }
