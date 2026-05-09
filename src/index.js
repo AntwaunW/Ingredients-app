@@ -9,12 +9,12 @@ import { FavoritesProvider } from './pages/FavoritesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <FavoritesProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </FavoritesProvider>
+    <BrowserRouter basename="/Ingredients-app">
+      <FavoritesProvider>
+        <React.StrictMode>
+          <App />
+  </React.StrictMode>
+  </FavoritesProvider>
   </BrowserRouter>
 );
 
